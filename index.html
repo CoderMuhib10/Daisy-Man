@@ -110,9 +110,9 @@
             <!-- card-1  -->
 
             <div class=" grid md:grid-cols-2 lg:grid-cols-3 gap-5 ">
-        
-                <div class="card  bg-base-100 drop-shadow-2xl  image-full ">
-                    <figure><img src="./images/hoodies.avif" /></figure>
+
+                <div class="card  bg-base-100  image-full ">
+                    <figure><img src="./images/shoes.avif" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Shoes!!</h2>
                         <p>At DaisyMan, we believe that style is a reflection of your unique personality and our mission
@@ -127,7 +127,7 @@
 
                 <!-- card-2  -->
 
-                <div class="card  bg-base-100 drop-shadow-2xl image-full ">
+                <div class="card  bg-base-100  image-full ">
                     <figure><img src="./images/hoodies.avif" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Clothes!</h2>
@@ -143,7 +143,7 @@
 
                 <!-- card-3  -->
 
-                <div class="card bg-base-100 drop-shadow-2xl image-full ">
+                <div class="card bg-base-100 image-full ">
                     <figure><img src="./images/perfume.avif" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Perfumes!
@@ -158,6 +158,32 @@
 
             </div>
         </section>
+
+        <!-- use grid when have to make more than 2 cards or something like that and use flex when we've to make 2 collumns/cards  -->
+
+        <!-- another thing is you can use flex and flex wrap in more than 2 collumns work but her's another prblm is if you use that the the contents must have a fixed width and in case of responsive after using flex wrap you'll face another prblm which is you've to justify-center those contents after that you've align those again for medium devices and so on.so it's better to use grid in case of more than 2 collumns work -->
+
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 ">
+
+            <!-- in case you've to use same style on lg and md devices but different in small devices in that case use normally write class for small devices and for md and lg devices just write the class after md: no need to write again on lg cause md didn't specify the max width so it's ulimited. -->
+            <div class="flex md:flex-row flex-col gap-5 items-center">
+                <div class="easy-content flex-1">
+                    <h3 class="text-2xl md:text-4xl mb-2">Easy Purchase</h3>
+                    <p>we believe that style is a reflection of your unique personality and our <br> mission is to
+                        provide
+                        you with a diverse and trendy collection. <br>
+                        Our mission is to provide you with a diverse and trendy collection.</p>
+                </div>
+                <!-- to divide equally the items use justify-between/justify-around to blank space between them then you've to give width height to both divs and then for responsive you've to use flex-wrap se so much problemin this so instate of that/rather use flex-1 to give them equall area and for responsive just change the flex direction .-->
+
+                <div class="easy-image flex-1">
+                    <img src="./images/easy-purchase.avif" alt="">
+                </div>
+            </div>
+
+
+        </section>
+
     </main>
 
     <footer></footer>
